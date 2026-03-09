@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = {
+            "name":"Sarinah",
+            "agee":"19",
+            "ispass":"true",
+            "address":{"street":"happy",
+        
+        "zip":"380055"},
+
+        "subj":["fsd","hsjds"],
+        "rank": null
+        }
+        console.log(a)
+     //[object Object]...obj dtatype 
+        document.write(a)
+        document.write("<br>")
+        document.write(JSON.stringify(a))
+        document.write("<br>")
+
+        var a1 = '{"name":"Sarinah","agee":"19","ispass":"true","address":{"street":"happy","zip":"380055"}}'
+
+       
+        document.write(a1)
+        document.write("<br>")
+        document.write(JSON.parse(a1))
+        console.log(a1)
+         console.log(a1.name)
+        document.write("<br>")
+    </script>
+</body>
+</html>
