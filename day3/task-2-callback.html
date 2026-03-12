@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="Add()">Increase Size!</button>
+    <p id="pid"></p>
+</body>
+<script>
+    fs =15
+    obj = document.getElementById("pid")
+    obj.innerHTML ="Hello"
+    function Add(){
+        
+        
+        obj.style.fontSize = fs+1 +'px'
+        if(fs<=50){
+            fs++
+        }
+        setInterval(Add,500)
+    }
+    
+</script>
+</html>

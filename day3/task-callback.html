@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #pid{
+        font-size: 10px;
+        color: brown;
+    }
+</style>
+<body>
+    <p id="pid"></p>
+</body>
+<script>
+     fs = 10
+    function add(){
+        obj = document.getElementById("pid")
+        obj.innerHTML ="Hello"
+        obj.style.fontSize = fs+1 +'px'
+        if(fs<=50){
+            fs++
+        }
+    }
+    setInterval(add,1000)
+</script>
+</html>
